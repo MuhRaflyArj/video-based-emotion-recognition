@@ -144,12 +144,17 @@ After training is complete, the best-performing model is loaded and evaluated on
 
 The model achieves a strong **final validation accuracy of 79.74%** and a **weighted F1-score of 0.79**, demonstrating a solid predictive capability for classifying emotions from video sequences.
 
-### Training History
-The plot below shows the model's accuracy and loss on both the training and validation sets over the training epochs. The validation curves track the training curves well, indicating that the model is generalizing effectively without significant overfitting.
+### 📈 Training History
 
-<p align="center">
-  <img src="./Assets/training_history.png" alt="Training History Plot">
-</p>
+The plots below show the model's accuracy and loss on both the training and validation sets over 2,500 epochs.
+
+![Training History Plot](./Assets/val_acc_loss.png)
+
+* ✅ **Successful Learning**: The curves clearly show that the model learned successfully over time, with accuracy consistently increasing and loss decreasing.
+
+* 🎯 **Peak Performance**: The model achieved its best performance on the unseen validation data at **epoch 1967**, reaching a **peak accuracy of 79.74%**. This is the version of the model that was saved for the final evaluation.
+
+* 🧐 **Generalization Gap**: A noticeable gap between the training (blue) and validation (green) curves indicates that the model fits the training data very well. This suggests some overfitting and presents an opportunity for further tuning to improve generalization.
 
 ### Performance by Emotion
 The classification report provides a detailed look at the model's performance for each emotion class. The model shows excellent precision for `Sad` and exceptional recall for `Neutral`, though it finds `Happy` to be the most challenging class.
