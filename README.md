@@ -74,8 +74,8 @@ Follow these steps to set up the project on your local machine.
 
 Open your terminal or command prompt and run the following commands:
 ```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/MuhRaflyArj/video-based-emotion-recognition.git
+cd video-based-emotion-recognition
 ```
 
 ### 3. Set Up the Environment
